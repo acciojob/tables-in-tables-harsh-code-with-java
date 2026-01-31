@@ -1,2 +1,58 @@
 
 /* Your CSS Code here. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    height: 100vh;
+    padding: 20px;
+}
+
+table {
+    background-color: yellow;
+    border-collapse: collapse;
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+}
+
+caption {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    caption-side: top;
+}
+
+thead th {
+    background-color: #333;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+tbody td {
+    padding: 12px;
+    border: 1px solid black;
+    background-color: yellow;
+}
+
+tbody tr {
+    border: 1px solid black;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: #fff88a;
+}
+
+tbody tr:hover td {
+    background-color: #ffeb3b;
+}
