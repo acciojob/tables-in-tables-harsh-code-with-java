@@ -1,58 +1,63 @@
-
-/* Your CSS Code here. */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Layout Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
-    height: 100vh;
     padding: 20px;
+    line-height: 1.6;
 }
 
+section {
+    margin-bottom: 40px;
+}
+
+/* Table Styling */
 table {
-    background-color: yellow;
     border-collapse: collapse;
-    border: 1px solid black;
-    height: 100%;
-    width: 100%;
+    margin-top: 10px;
 }
 
-caption {
-    font-size: 22px;
-    font-weight: bold;
-    padding: 12px;
-    background-color: #333;
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+/* Nested Table Specifics */
+/* This ensures the nested tables look like the layout in the image */
+table table {
+    margin: 10px auto;
+}
+
+/* Background Color Requirement for Nested Table 4 */
+.highlight-cell {
+    background-color: black;
     color: white;
-    caption-side: top;
+    text-align: center;
 }
 
-thead th {
-    background-color: #333;
-    color: white;
-    padding: 12px;
-    text-align: left;
+/* Form Styling */
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
     font-weight: bold;
-    border: 1px solid black;
 }
 
-tbody td {
-    padding: 12px;
-    border: 1px solid black;
-    background-color: yellow;
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="password"],
+input[type="url"],
+select {
+    padding: 5px;
+    width: 250px;
 }
 
-tbody tr {
-    border: 1px solid black;
-}
-
-tbody tr:nth-child(even) td {
-    background-color: #fff88a;
-}
-
-tbody tr:hover td {
-    background-color: #ffeb3b;
+button {
+    padding: 8px 15px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
 }
